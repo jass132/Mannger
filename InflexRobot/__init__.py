@@ -32,17 +32,17 @@ if sys.version_info[0] < 3 or sys.version_info[1] < 6:
 ENV = bool(os.environ.get("ENV", False))
 
 if ENV:
-    API_ID = int(os.environ.get("API_ID", None))
-    API_HASH = os.environ.get("API_HASH", None)
+    API_ID = int(os.environ.get("API_ID", 27288008))
+    API_HASH = os.environ.get("API_HASH", c5eae746d8e903fd9bf53752a96503b7)
     ALLOW_CHATS = os.environ.get("ALLOW_CHATS", True)
     ALLOW_EXCL = os.environ.get("ALLOW_EXCL", False)
-    CASH_API_KEY = os.environ.get("CASH_API_KEY", None)
+    CASH_API_KEY = os.environ.get("CASH_API_KEY", TRV8U4PBR9W4LVF7)
     DB_URI = os.environ.get("DATABASE_URL")
     DEL_CMDS = bool(os.environ.get("DEL_CMDS", False))
-    EVENT_LOGS = os.environ.get("EVENT_LOGS", None)
+    EVENT_LOGS = os.environ.get("EVENT_LOGS", -1001908683000)
     INFOPIC = bool(os.environ.get("INFOPIC", "True"))
     LOAD = os.environ.get("LOAD", "").split()
-    MONGO_DB_URI = os.environ.get("MONGO_DB_URI", None)
+    MONGO_DB_URI = os.environ.get("MONGO_DB_URI", mongodb+srv://JASS:99886851@cluster0.flwqxza.mongodb.net/?retryWrites=true&w=majority)
     NO_LOAD = os.environ.get("NO_LOAD", "").split()
     START_IMG = os.environ.get(
         "START_IMG", "https://telegra.ph/file/40eb1ed850cdea274693e.jpg"
@@ -50,12 +50,12 @@ if ENV:
     STRICT_GBAN = bool(os.environ.get("STRICT_GBAN", True))
     SUPPORT_CHAT = os.environ.get("SUPPORT_CHAT", "DevilsHeavenMF")
     TEMP_DOWNLOAD_DIRECTORY = os.environ.get("TEMP_DOWNLOAD_DIRECTORY", "./")
-    TOKEN = os.environ.get("TOKEN", None)
-    TIME_API_KEY = os.environ.get("TIME_API_KEY", None)
+    TOKEN = os.environ.get("TOKEN", 6350301989:AAF6qvF25cFeB1WKBQ8bqxhuFQzNnV6apyA)
+    TIME_API_KEY = os.environ.get("TIME_API_KEY", http://api.timezonedb.com/v2.1/list-time-zone)
     WORKERS = int(os.environ.get("WORKERS", 8))
 
     try:
-        OWNER_ID = int(os.environ.get("OWNER_ID", None))
+        OWNER_ID = int(os.environ.get("OWNER_ID", 5975303993))
     except ValueError:
         raise Exception("Your OWNER_ID env variable is not a valid integer.")
 
